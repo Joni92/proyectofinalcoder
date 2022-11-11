@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/styles.css" />
+    
+        <!-- Scripts Iconos -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <title>Registro - GRÜN Eco-mercado</title>
+    </head>
+<body>
+    
+    <section class="register__section1">
+        <a href="./index.html" class="register__btnExit">Salir</a>
+
+            <div class="register__section1-container">
+                <h1 class="title">Hola, bienvenido a <span>GRÜN</span></h1>
+                <p class="description">Estás a punto de registrarte. A continuación, vamos a pedirte rellenar un formulario con tus datos. Y Listo!</p>
+                <button class="btnLetsRegister"><a href="#2">Vamos 💪</a></button>
+            </div>    
+
+    </section>
+
+    <section class="register__section2" id="2" >
+        <form action="" class="formulario" id="formulario">
+
+            <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__name">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="name" id="name" placeholder="Marcos">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Debes ingresar solo letras, sin caracteres especiales.</p>
+            </div> 
+
+            <!-- Grupo: Apellido -->
+            <div class="formulario__grupo" id="grupo__surname">
+                <label for="apellido" class="formulario__label">Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="surname" id="surname" placeholder="Lopez">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error"></p>
+            </div> 
+            <br>
+
+            <!-- Grupo: Correo electrónico -->
+            <div class="formulario__grupo" id="grupo__email">
+                <label for="email" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="email" id="email" placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, números, arroba y guiones.</p>
+            </div>
+
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__phone">
+                <label for="phone" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="phone" class="formulario__input" name="phone" id="phone" placeholder="351 524234">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El teléfono solo puede contener números y sin espacios. Sin 0 y 15.</p>
+            </div>
+            <br>
+
+            <!-- Grupo: Usuario -->
+            <div class="formulario__grupo" id="grupo__user">
+                <label for="usuario" class="formulario__label">Usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="user" id="user" placeholder="marcos123">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener, número y letras.</p>
+            </div>
+            
+            <!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+            <!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje-error" id="formulario__mensaje-error">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+            
+			<div class="formulario__grupo formulario__grupo-btn-registrar">
+				<button type="submit" class="formulario__btn" >Registrarme</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Registro Exitoso!</p>
+			</div>
+
+        </form>
+    </section>
+
+    
+    <!-- Scripts -->
+    <script src="./js/products.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+</html>
